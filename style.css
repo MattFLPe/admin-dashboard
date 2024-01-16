@@ -4,6 +4,10 @@
     font-family: Roboto;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: lightgray;
 }
@@ -11,7 +15,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
 }
 
 
@@ -21,6 +25,8 @@ body {
     grid-row: 1/2;
     background-color: white;
     box-shadow: gray 1px 1px 5px;
+    margin-bottom: 10px;
+    max-height: 200px;
 }
 
 .header-upper {
@@ -105,10 +111,12 @@ button {
 .sidebar {
     display: grid;
     grid-column: 1/2;
-    grid-row: 1/5;    
-    height: 540px;
-    background-color:#ced2cc;
-    box-shadow: #ced2cc 1px 1px 5px inset;
+    grid-row: 1/4;    
+    width:100%;
+    height:100%;
+    float:left;
+    background-color:#d6d3d1;
+    box-shadow: #a5b4fc 1px 1px 5px inset;
 }
 
 
@@ -119,9 +127,10 @@ button {
     justify-items: start;
     grid-template-columns: 1fr 2fr;
     font-weight: bold;
-    text-shadow: 1px 1px #ced2cc;
+    text-shadow: 1px 1px #a5b4fc;
     margin: 70px;
-    margin-top: -100px;
+    margin-top: -350px;
+    max-height: 350px;
 }
 
 a {
@@ -145,23 +154,90 @@ img {
 
 
 .logo {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .logo-img {
     display: grid;
-    height: 40px;
+    height: 30px;
 }
 
+
+
 .main {
-    background-color: lightgray;
+    background-color: #ced2cc;
     display: grid;
-    grid-area: main;
-    grid-row: 3/4;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-row: 2/4;
     grid-column: 2/4;
+    gap: 10px;
 }
+
+.project-bg {
+    display: grid;
+    grid-template-columns: minmax(200px, 400px);
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+
+
+.project-card {
+    background-color: #ecfccb;
+    padding: 10px;
+    border-left: solid #083344 7px;
+    border-radius: 10px;
+    margin: 40px;
+    max-height: 70px;
+}
+
+.project-card-heading {
+    margin: 10px;
+}
+
+.project-card-description {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    width: minmax(50px, 100px)
+    
+}
+
+.trending-card-container {
+    background-color: #a5b4fc;
+    margin-top: 10px;
+    margin-right: 100px;
+    padding: 10px;
+    border: solid #a5b4fc 1px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: gray 1px 1px 5px;
+    
+
+}
+
+.projects {
+    margin: 20px;
+}
+
+.github-icon {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items:center;
+    margin: 10px;
+    height: 70px;
+}
+
+hr {
+    margin: 10px;
+    
+}
+
