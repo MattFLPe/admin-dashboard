@@ -12,39 +12,45 @@
 </head>
 <body>
     <div class="container">
-        
-         <div class="header">
-            <div class="search-bar-container">
-                <img src="images/magnify.svg">
-                <input class="search-bar" type="text">
-            </div>
-            <div class="welcome-title">
-                <img src="images/account.svg">
-                <h2>Hi, there!</h2>
-                
+        <div class="header-bg">
+            <div class="header-upper">
+                <img class="header-img" src="images/magnify.svg">
+                <input class="search-bar" type="text" placeholder=" Search...">
+            <div class="account-container">
+                <img class="header-img" src="images/bell-ring.svg">
+                <img class="account-img" src="images/account-box.svg"/>
+                <p class="account-name">Admin.</p>
             </div>
         </div>
+            <div class="header-lower">
+                <div class="welcome-profile">
+                    <img class="profile-img" src="images/account.svg">
+                    <h3>Hi, there!<br><span>Admin</span></h3>
+                </div> 
+                <div class="btn-container">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+    </div>
     
-        <aside class="sidebar">
-            <div class="logo">
-                <img class="logo-img" src="images/view-dashboard.svg">Dashboard
-            </div>
-            <div class="sidebar-contents">
-                <ul>
-                    <img src="images/home.svg"><li>Home</li>
-                    <img src="images/card-account-details.svg"/><li>Profile</li>
-                    <img src="images/message-reply.svg"/><li>Messages</li>
-                    <img src="images/clock-time-three.svg"/><li>History</li>
-                    <img src="images/file-multiple.svg"/><li>Tasks</li>
-                    <img src="images/account-group.svg"/><li>Communities</li>
-                
-                
-                    <img src="images/cog.svg"/><li>Settings</li>
-                    <img src="images/help-box.svg"/><li>Support</li>
-                    <img src="images/lock.svg"/><li>Privacy</li>
-                </ul>
-            </div>
-        </aside>
+    <aside class="sidebar">
+        <div class="logo">
+            <img class="logo-img" src="images/view-dashboard.svg">Dashboard
+        </div>
+        <div class="sidebar-contents">
+            <img src="images/home.svg"><a href="#">Home</a>    
+            <img src="images/card-account-details.svg"/><a href="#">Profile</a>
+            <img src="images/message-reply.svg"/><a href="#">Messages</a>
+            <img src="images/clock-time-three.svg"/><a href="#">History</a>
+            <img src="images/file-multiple.svg"><a href="#">Tasks</a>
+            <img src="images/account-group.svg"/><a href="#">Communities</a>
+            <img src="images/cog.svg"/><a href="#">Settings</a>
+            <img src="images/help-box.svg"/><a href="#">Support</a>
+            <img src="images/lock.svg"/><a href="#">Privacy</a>
+        </div>      
+    </aside>
             
     
     <div class="main">
