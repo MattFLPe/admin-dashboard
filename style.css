@@ -9,15 +9,14 @@ html, body {
 }
 
 body {
-    background-color: lightgray;
+    background-color: #ced2cc;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 3fr));
     grid-template-rows: 1fr 1fr 2fr;
 }
-
 
 .header-bg {
     display: grid;
@@ -25,21 +24,20 @@ body {
     grid-row: 1/2;
     background-color: white;
     box-shadow: gray 1px 1px 5px;
-    margin-bottom: 10px;
     max-height: 200px;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
 }
 
 .header-upper {
     display: grid;
-    grid-template-columns: 20px 750px 1fr;
+    grid-template-columns: 40px 750px 1fr;
     grid-template-rows: 1fr;
     align-self: self-start;
     justify-self: self-start;
     gap: 20px;
     margin-top: 20px;
-    margin-left: 40px;
-    
 }
+
 
 .account-container {
     display: flex;
@@ -55,16 +53,16 @@ body {
 }
 
 .search-bar {
-    width: 600px;
+    width: 300px;
     height: 25px;
     border: solid black 2px;
     border-radius: 50px;
-    background-color: #e2e8f0;
-    
+    background-color: #e2e8f0;   
 }
 
 .header-img {
     height: 30px;
+    margin-left: 20px;
 }
 
 .account-img {
@@ -88,7 +86,6 @@ body {
     flex-direction: row;
     align-items: center;
     margin-left: 20px;
-    
 }
 
 .btn-container {
@@ -113,10 +110,10 @@ button {
     grid-column: 1/2;
     grid-row: 1/4;    
     width:100%;
-    height:100%;
+    height:110%;
     float:left;
-    background-color:#d6d3d1;
-    box-shadow: #a5b4fc 1px 1px 5px inset;
+    background-color: #94a3b8;
+    box-shadow: #94a3b8 1px 1px 5px inset;
 }
 
 
@@ -127,7 +124,7 @@ button {
     justify-items: start;
     grid-template-columns: 1fr 2fr;
     font-weight: bold;
-    text-shadow: 1px 1px #a5b4fc;
+    text-shadow: 1px 1px #94a3b8;
     margin: 70px;
     margin-top: -350px;
     max-height: 350px;
@@ -146,12 +143,9 @@ a:hover {
     color: gray;
 }
 
-    
-
 img {
     height: 20px;
 }
-
 
 .logo {
     display: flex;
@@ -161,6 +155,7 @@ img {
     margin-left: 50px;
     font-weight: bold;
     font-size: 25px;
+    text-shadow: 1px 1px #94a3b8;
 }
 
 .logo-img {
@@ -168,13 +163,11 @@ img {
     height: 30px;
 }
 
-
-
 .main {
     background-color: #ced2cc;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 600px;
     grid-row: 2/4;
     grid-column: 2/4;
     gap: 10px;
@@ -182,12 +175,9 @@ img {
 
 .project-bg {
     display: grid;
-    grid-template-columns: minmax(200px, 400px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: 1fr 1fr;
-    
 }
-
-
 
 .project-card {
     background-color: #ecfccb;
@@ -195,32 +185,37 @@ img {
     border-left: solid #083344 7px;
     border-radius: 10px;
     margin: 40px;
-    max-height: 70px;
+    margin-left: 20px;
+    max-height: 130px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card-heading {
     margin: 10px;
 }
 
-.project-card-description {
+.project-card-options {
     display: flex;
     justify-content: end;
     gap: 20px;
     width: minmax(50px, 100px)
-    
 }
 
 .trending-card-container {
-    background-color: #a5b4fc;
+    background-color: #a8a29e;
     margin-top: 10px;
-    margin-right: 100px;
-    padding: 10px;
-    border: solid #a5b4fc 1px;
+    margin-right: 50px;
+    padding: 25px;
+    border: solid #a8a29e 1px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     box-shadow: gray 1px 1px 5px;
-    
+}
 
+p {
+    font-size:small;
 }
 
 .projects {
@@ -228,16 +223,19 @@ img {
 }
 
 .github-icon {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items:center;
     margin: 10px;
     height: 70px;
 }
 
 hr {
-    margin: 10px;
-    
+    margin: 15px;
 }
 
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;   
+}
